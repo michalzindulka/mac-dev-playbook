@@ -103,5 +103,6 @@ users:
       - adpyke.vscode-sql-formatter
       - redhat.ansible
       - pkief.material-icon-theme
-      - zhuangtongfa.material-theme 
+      - zhuangtongfa.material-theme
+      - ms-vscode.powershell
       
