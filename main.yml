@@ -45,6 +45,10 @@
       when: configure_sublime
       tags: ['sublime-text']
 
+    - import_tasks: tasks/ohmyposh-themes.yml
+      when: configure_ohmyposh_themes
+      tags: ['ohmyposh-themes']
+
     - block:
         - name: Run configured post-provision ansible task files.
           include_tasks: "{{ outer_item }}"

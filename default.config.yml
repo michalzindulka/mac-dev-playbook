@@ -128,3 +128,6 @@ sublime_package_control:
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
+
+# Set to 'true' to configure ohmyposh custom themes.
+configure_ohmyposh_themes: true

@@ -1,0 +1,12 @@
+---
+- name: Get OhMyPosh theme folder
+  command: "brew --prefix oh-my-posh"
+  register: brew_cmd_out
+
+- set_fact:
+    ohmyposh_theme_path: "{{ brew_cmd_out.stdout }}"
+
+- name: Copy Oh-My-Posh custom themes
+  copy:
+    src: "files/ohmyposh/"
+    dest: "{{ ohmyposh_theme_path }}/themes/"
