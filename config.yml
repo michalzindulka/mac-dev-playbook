@@ -1,0 +1,107 @@
+# Enable steps:
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+configure_dock: true
+configure_sudoers: false
+configure_sublime: false
+configure_ohmyposh_themes: true
+configure_vsc_extensions: true
+
+dockitems_remove:
+  - Launchpad
+  - Maps
+  - Photos
+  - Contacts
+  - TV
+  - Keynote
+  - Pages
+  - Numbers
+  - "App Store"
+  - "System Preferences"
+  - Reminders
+  - Music
+  - Podcasts
+
+homebrew_installed_packages:
+  - git
+  - openssl
+  - azure-cli
+  - helm
+  - jq
+  - terragrunt
+  - terraform
+  - zsh-history-substring-search
+  - bash-completion
+  - zsh
+  - kubectl
+  - oh-my-posh
+  - mas
+  - azcopy
+  - ansible-lint
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-versions
+
+homebrew_cask_apps:
+  - docker
+  - firefox
+  - google-chrome
+  - slack
+  - visual-studio-code
+  - iterm2
+  # - microsoft-teams (Homebrew version still requires rosetta.)
+  - keepassxc
+  - powershell-preview
+  - webex
+  - postman
+  - discord
+  - drawio
+  - tunnelblick
+  - nordvpn
+  - microsoft-azure-storage-explorer
+  - appcleaner
+
+dotfiles_repo: https://github.com/michalzindulka/dotfiles.git
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+
+mas_installed_apps:
+  - { id: 784801555, name: "Microsoft OneNote" }
+  - { id: 462058435, name: "Microsoft Excel" }
+  - { id: 462062816, name: "Microsoft PowerPoint" }
+  - { id: 462054704, name: "Microsoft Word" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+  - { id: 1402042596, name: "AdBlock" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 441258766, name: "Magnet" }
+
+users:
+  - username: michalzindulka
+    visual_studio_code_extensions: 
+      - 4ops.terraform
+      - ms-azure-devops.azure-pipelines
+      - msazurermtools.azurerm-vscode-tools
+      - ms-azuretools.vscode-bicep
+      - ms-azuretools.vscode-bicep
+      - zainchen.json
+      - yzhang.markdown-all-in-one
+      - ms-python.vscode-pylance
+      - ms-python.python
+      - foxundermoon.shell-format
+      - timonwong.shellcheck
+      - redhat.vscode-yaml
+      - bradymholt.pgformatter
+      - adpyke.vscode-sql-formatter
+      - redhat.ansible
+      - pkief.material-icon-theme
+      - zhuangtongfa.material-theme 
+      

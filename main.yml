@@ -24,6 +24,9 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: gantsign.visual-studio-code-extensions
+      when: configure_vsc_extensions
+      tags: ['vsc-extensions']
 
   tasks:
     - import_tasks: tasks/sudoers.yml

@@ -131,3 +131,8 @@ post_provision_tasks: []
 
 # Set to 'true' to configure ohmyposh custom themes.
 configure_ohmyposh_themes: true
+
+# Configure Visual Studio Extensions:
+configure_vsc_extensions: false
+users: []
+visual_studio_code_extensions_build: stable
