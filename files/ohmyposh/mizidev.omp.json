@@ -5,9 +5,17 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#0077c2",
+          "background": "transparent",
           "foreground": "#ffffff",
-          "leading_diamond": "\u256d\u2500\ue0b6",
+          "style": "plain",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "background": "#01579B",
+          "foreground": "#ffffff",
+          "trailing_diamond": "\ue0b0",
+          "leading_diamond": "<transparent,#01579B>\ue0b0</>",
           "style": "diamond",
           "template": " {{ .Name }} ",
           "type": "shell"
@@ -72,7 +80,9 @@
         {
           "background": "#003543",
           "foreground": "#ffffff",
-          "style": "plain",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} ",
           "type": "time"
         },
@@ -82,28 +92,28 @@
           "properties": {
             "always_enabled": true
           },
-          "style": "plain",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "powerline",
           "template": " {{ .FormattedMs }} ",
           "type": "executiontime"
         },
         {
-          "background": "#00897b",
-          "background_templates": [
-            "{{ if gt .Code 0 }}#e91e63{{ end }}"
-          ],
-          "foreground": "#ffffff",
-          "properties": {
-            "always_enabled": true
-          },
-          "style": "plain",
-          "template": " \ue23a ",
-          "type": "exit"
+          "background": "#ebcc34",
+          "foreground": "#000000",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "powerline",
+          "template": " \ufd31 {{ .Context }}{{ if .Namespace }} :: {{ .Namespace }}{{ end }} ",
+          "type": "kubectl"
         },
         {
           "background": "#9ec3f0",
           "foreground": "#000000",
-          "style": "plain",
-          "template": " {{ .Name }} ",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "diamond",
+          "template": " \ufd03 {{ .Name }} ",
           "type": "az"
         }
       ],
@@ -114,15 +124,9 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#21c7c7",
-          "style": "plain",
-          "template": "\u2570\u2500",
-          "type": "text"
-        },
-        {
-          "foreground": "#e0f8ff",
+          "foreground": "#ffffff",
           "foreground_templates": [
-            "{{ if gt .Code 0 }}#ef5350{{ end }}"
+            "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
           "properties": {
             "always_enabled": true
