@@ -64,6 +64,7 @@ homebrew_cask_apps:
   - nordvpn
   - microsoft-azure-storage-explorer
   - appcleaner
+  - pgadmin4
 
 dotfiles_repo: https://github.com/michalzindulka/dotfiles.git
 dotfiles_files:
