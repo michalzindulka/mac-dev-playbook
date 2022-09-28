@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - mas
   - azcopy
   - ansible-lint
+  - zsh-syntax-highlighting
 
 homebrew_taps:
   - homebrew/core
