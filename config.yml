@@ -108,4 +108,5 @@ users:
       - zhuangtongfa.material-theme
       - ms-vscode.powershell
       - rubenverg.bootstrap-product-icons
+      - hashicorp.terraform
       
