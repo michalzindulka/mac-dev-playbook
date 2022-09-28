@@ -109,4 +109,6 @@ users:
       - ms-vscode.powershell
       - rubenverg.bootstrap-product-icons
       - hashicorp.terraform
+      - eamodio.gitlens
+      - donjayamanne.githistory
       
