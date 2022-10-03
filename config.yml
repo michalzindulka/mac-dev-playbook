@@ -111,4 +111,5 @@ users:
       - hashicorp.terraform
       - eamodio.gitlens
       - donjayamanne.githistory
+      - ms-kubernetes-tools.vscode-kubernetes-tools
       
